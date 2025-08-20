@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biogas Plant Operator - VishalSagar</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="nav-bar">
+            <div class="logo">VishalSagar Biogas</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#layout">Layout</a>
+                <a href="#capacity">Capacity</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-bg" id="hero-bg-1" style="background-image:url('src/biogasplant.jpg')"></div>
+        <div class="hero-bg" id="hero-bg-2" style="background-image:url('src/nephiyer.jpg')"></div>
+        <div class="hero-content">
+            <h1>Clean Energy for a Sustainable Future</h1>
+            <p>Operated by VishalSagar</p>
+        </div>
+    </section>
+
+    <main class="container">
+       
+    <main class="container">
+        <section class="section" id="about">
+            <h2 class="da   rk-green">About the Plant</h2>
+            <p>Welcome to the Biogas Plant operated by VishalSagar. Our facility efficiently converts organic waste into clean, renewable biogas, supporting both environmental sustainability and energy needs.</p>
+        </section>
+         <section class="future-section">
+            <h2>Biogas is for Future</h2>
+            <div class="cards-container">
+                <div class="op-card">♻️<h3>Renewable Energy</h3></div>
+                <div class="op-card">🌍<h3>Carbon Neutral</p></div>
+                <div class="op-card">🔥<h3>Versatile Energy Use</h3></div>
+                <div class="op-card">🗑️<h3>Waste Management</h3></div>
+                <div class="op-card">🌾<h3>Organic Fertilizer</h3></div>
+                <div class="op-card">👨‍👩‍👧‍👦<h3>Rural Development</h3></div>
+            </div>
+        </section>
+        <section class="section" id="layout">
+            <h2>Plant Layout & Design</h2>
+            <img src="docs/plant-layout-placeholder.png" alt="Biogas Plant Layout" class="layout-img">
+            <p><em>Note: Replace the above image with your actual plant layout.</em></p>
+            <ul>
+                <li>Modern anaerobic digester technology</li>
+                <li>Automated feedstock handling</li>
+                <li>Gas purification and storage units</li>
+                <li>Safety and monitoring systems</li>
+            </ul>
+        </section>
+        <section class="section" id="capacity">
+            <h2>Operational Capacity</h2>
+            <div class="cards-container">
+                <div class="op-card">
+                    <h3>Feedstock Input</h3>
+                    <p>Up to 10 tons/day</p>
+                </div>
+                <div class="op-card">
+                    <h3>Biogas Output</h3>
+                    <p>~500 m³/day</p>
+                </div>
+                <div class="op-card">
+                    <h3>Electricity Generation</h3>
+                    <p>~1,000 kWh/day</p>
+                </div>
+                <div class="op-card">
+                    <h3>Digestate Output</h3>
+                    <p>~8 tons/day</p>
+                </div>
+                <div class="op-card">
+                    <h3>Safety and Security</h3>
+                    <p>Leak detection system<br>Gas pressure monitoring</p>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe for Updates</h2>
+            <p>Get the latest news and updates about our biogas plant and the industry.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="section contact" id="contact">
+            <h2>Contact & Sales</h2>
+            <p>Interested in purchasing biogas or learning more about our plant? Contact VishalSagar:</p>
+            <ul>
+                <li>Email: <a href="mailto:vishalsagar@example.com">vishalsagar@example.com</a></li>
+                <li>Phone: +91-XXXXXXXXXX</li>
+            </ul>
+            <div style="margin-top:2rem;">
+                <h3>Site Location</h3>
+                <iframe src="https://www.google.com/maps?q=WQPW%2B7PG,+Oswal+Nagar,+Dhule,+Maharashtra+424005&output=embed" width="100%" height="300" style="border:0;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.08);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p style="font-size:0.95rem;color:#388e3c;margin-top:0.5rem;">WQPW+7PG, Oswal Nagar, Dhule, Maharashtra 424005</p>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+    <script>
+    // Hero background slider
+    const heroBgs = [
+        document.getElementById('hero-bg-1'),
+        document.getElementById('hero-bg-2')
+    ];
+    let heroIdx = 0;
+    function showHeroBg(idx) {
+        heroBgs.forEach((bg, i) => bg.classList.toggle('active', i === idx));
+    }
+    showHeroBg(heroIdx);
+    setInterval(() => {
+        heroIdx = (heroIdx + 1) % heroBgs.length;
+        showHeroBg(heroIdx);
+    }, 8000);
+    </script>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:vishalsagar@example.com">vishalsagar@example.com</a></p>
+                <p>Phone: +91-XXXXXXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>Information</h4>
+                <a href="#about">About</a> |
+                <a href="#layout">Layout</a> |
+                <a href="#capacity">Capacity</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">YouTube</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2025 VishalSagar Biogas Plant</div>
+    </footer>
+</body>
+</html>
