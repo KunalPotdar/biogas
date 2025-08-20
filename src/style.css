@@ -401,13 +401,27 @@ h1, h2 {
     
     .cards-container {
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        align-items: stretch;
+        gap: 0.75rem;
+        margin: 1rem 0;
     }
     
     .op-card {
-        width: 100%;
+        width: auto;
+        min-width: 0;
         max-width: none;
+        padding: 1rem 1.25rem;
+        margin: 0 0.5rem;
+        flex: 0 1 auto;
+    }
+    
+    .op-card h3 {
+        font-size: 1.1rem;
+        margin: 0.25rem 0;
+    }
+    
+    .op-card p {
+        font-size: 1rem;
     }
     
     .hero-content {
